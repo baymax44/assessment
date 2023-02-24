@@ -9,3 +9,9 @@ You've been asked to refactor the function `deterministicPartitionKey` in [`dpk.
 You will be graded on the exhaustiveness and quality of your unit tests, the depth of your refactor, and the level of insight into your thought process provided by the written explanation.
 
 ## Your Explanation Here
+
+1. Moved `const` variables out of the method globally to prevent memory consumption by declaring repeated variables.
+2. Declared common `getHexCode` method to prevent using the hash method several times.
+3. Used the `??` operator to reduce if ... else usage.
+3. Made adjustments in logic for easy returning.
+4. Added test cases
